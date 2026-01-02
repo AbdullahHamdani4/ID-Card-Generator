@@ -1,12 +1,17 @@
 // console.log(1);
 let form = document.querySelector("form");
 let div=document.querySelector("div")
-// function picSrc(input) {
-//     let files=input.files[0]
-//     return files.name
-//  }
+  function picSrc(input) {
+    let files=input.files[0]
+    console.log(files);
+    div.children[1].src=URL.createObjectURL(files)
+    console.log(div.children[1].src);
+    return files.name
+ }
  function generate(e) {
+    
     e.preventDefault()
+  
     let data = {
         firstName: form.children[0].value,
         lastName: form.children[1].value,
