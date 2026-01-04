@@ -3,18 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #111827;
+
+ }
  /* From Uiverse.io by Spacious74 */ 
 .container {
   border: solid 1px #8d8d8d;
+  width: 300px;
   padding: 20px;
   border-radius: 20px;
   background-color: #fff;
+  background: #e8e6e6;
+border-radius: 14px;
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .container .heading {
   font-size: 1.3rem;
   margin-bottom: 20px;
   font-weight: bolder;
+  text-align: center;
+  color: #1f2937;
+font-weight: 600;
 }
 
 .form {
@@ -34,8 +49,7 @@
 .form .btn {
   padding: 10px 20px;
   font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+   letter-spacing: 3px;
   border-radius: 10px;
   border: solid 1px #1034aa;
   border-bottom: solid 1px #90c2ff;
@@ -45,6 +59,8 @@
   transition: all 0.2s ease;
   box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #0070f0,
     inset 0px -4px 5px #002cbb;
+    width: 100%;
+    font-family: sans-serif;
 }
 
 .form .btn:active {
@@ -91,6 +107,7 @@
   letter-spacing: 1px;
   border: none;
   border-radius: 100px;
+  font-size: 1.2rem;
 }
 
 .form .passicon {
@@ -104,3 +121,4 @@
 .form .close {
   display: none;
 }
+ 
