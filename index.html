@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ID Card Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- <p></p> -->
-    <!-- <button></button> -->
-     <div class="container-form">
-         <form action="" onsubmit="generate(event)">
-        <label for="">First Name</label><input type="text"  placeholder="First Name" required value="Abdullah">
-        <label for="">Last Name</label><input type="text"  placeholder="Last Name" required value="Hamdani">
-        <label for="">ID Number</label><input type="email"  placeholder="Email" required value="abdullah.hamdani@gmail.com">
-        <label for="">Role</label><input type="number"  placeholder="Number" required value="03332177223">
-        <label for="">Institute</label><input type="text"  placeholder="Course Name" required value="Web and app development">
-        <label for="">Picture</label><input type="file" required onchange="picSrc(this)">
-        <!-- <button type="submit">Submit</button> -->
-     </form>
-     </div>
-     <div class="card">
+    <!-- From Uiverse.io by Spacious74 -->
+    <div class="container">
+        <div class="heading">SignIn to your account</div>
+        <form class="form" action="">
+            <div class="input-field">
+                <input required="" autocomplete="off" type="text" name="text" id="username" />
+                <label for="username">Full Name</label>
+            </div>
+            <div class="input-field">
+                <input required="" autocomplete="off" type="email" name="email" id="email" />
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input required="" autocomplete="off" type="password" name="text" id="password" />
+                <label for="username">Password</label>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn">Submit</button>
+                <div class="acc-text">
+                    New here ?
+                    <span style="color : #0000ff; cursor : pointer;">Create Account</span>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- <div class="card">
         <h2>ID Card</h2>
         <img src="" alt="hg" height="50px" width="50px">
         <p>First Name</p>
@@ -28,7 +45,8 @@
         <p>Email</p>
         <p>Number</p>
         <p>Course Name</p>
-     </div>
+     </div> -->
     <script src="app.js"></script>
 </body>
+
 </html>
