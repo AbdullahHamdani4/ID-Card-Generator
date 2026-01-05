@@ -2,98 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ID Card Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Card Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <!-- From Uiverse.io by andrew-manzyk --> 
-<div class="loader">
-  <div class="text"><span>Loading</span></div>
-  <div class="text"><span>Loading</span></div>
-  <div class="text"><span>Loading</span></div>
-  <div class="text"><span>Loading</span></div>
-  <div class="text"><span>Loading</span></div>
-  <div class="text"><span>Loading</span></div>
-  <div class="text"><span>Loading</span></div>
-  <div class="text"><span>Loading</span></div>
-  <div class="text"><span>Loading</span></div>
-  <div class="line"></div>
-</div>
-
-    <div class="container form-container">
-        <div class="heading">Generate Your ID Card</div>
-        <form class="form" action="" onsubmit="generateCard(event)">
-            <div class="input-field">
-                <input required="" autocomplete="off" type="text" name="text" id="username" />
-                <label for="username">First Name</label>
-            </div>
-            <div class="input-field">
-                <input required="" autocomplete="off" type="text" name="text" id="username" />
-                <label for="username">Last Name</label>
-            </div>
-            <div class="input-field">
-                <input required="" autocomplete="off" type="text" name="text" id="username" maxlength="10"/>
-                <label for="username">ID Number</label>
-            </div>
-            <div class="input-field">
-                <input required="" autocomplete="off" type="text" name="text" id="username" maxlength="22"/>
-                <label for="username">Role</label>
-            </div>
-            <div class="input-field">
-                <input required="" autocomplete="off" type="email" name="email" id="email" />
-                <label for="email">Email</label>
-            </div>
-            <div class="input-field">
-                <input required="" autocomplete="off" type="text" name="email" id="email" maxlength="20" />
-                <label for="email">Institute</label>
-            </div>
-            <div class="input-field">
-                <input required="" autocomplete="off" type="file" name="text" id="password" />
-                <label for="username"></label>
-            </div>
-
-            <div class="btn-container">
-                <button class="btn" type="submit">Generate ID Card</button>
-            </div>
-        </form>
-    </div>
-
-   <div class="id-card hide">
-  <div class="id-top">
-    <span class="institute">SMIT Karachi</span>
+  <!-- From Uiverse.io by andrew-manzyk -->
+  <div class="loader hide">
+    <div class="text"><span>Loading</span></div>
+    <div class="text"><span>Loading</span></div>
+    <div class="text"><span>Loading</span></div>
+    <div class="text"><span>Loading</span></div>
+    <div class="text"><span>Loading</span></div>
+    <div class="text"><span>Loading</span></div>
+    <div class="text"><span>Loading</span></div>
+    <div class="text"><span>Loading</span></div>
+    <div class="text"><span>Loading</span></div>
+    <div class="line"></div>
   </div>
 
-  <div class="id-content">
-    <div class="photo">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3mZVMH7Y80cy377LVuqMH6l_jWIJY5FDOWQ&s"
-           alt="profile" class="img">
-    </div>
-
-    <h2 class="name">Abdullah Hamdani</h2>
-    <p class="role">Frontend Developer</p>
-
-    <div class="details">
-      <div>
-        <span>ID No</span>
-        <span class="id">SMIT-12345</span>
+  <div class="container form-container">
+    <div class="heading">Generate Your ID Card</div>
+    <form class="form" action="" onsubmit="generateCard(event)">
+      <div class="input-field">
+        <input required="" autocomplete="off" type="text" name="text" id="username" />
+        <label for="username">First Name</label>
       </div>
-      <div>
-        <span>Email</span>
-        <span class="email">abdullah.hamdani87@gmail.com</span>
+      <div class="input-field">
+        <input required="" autocomplete="off" type="text" name="text" id="username" />
+        <label for="username">Last Name</label>
+      </div>
+      <div class="input-field">
+        <input required="" autocomplete="off" type="text" name="text" id="username" maxlength="10" />
+        <label for="username">ID Number</label>
+      </div>
+      <div class="input-field">
+        <input required="" autocomplete="off" type="text" name="text" id="username" maxlength="22" />
+        <label for="username">Role</label>
+      </div>
+      <div class="input-field">
+        <input required="" autocomplete="off" type="email" name="email" id="email" value="hello@gmail.com" />
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field">
+        <input required="" autocomplete="off" type="text" name="email" id="email" maxlength="20" />
+        <label for="email">Institute</label>
+      </div>
+      <div class="input-field">
+        <input required="" autocomplete="off" type="file" name="text" id="password" />
+        <label for="username"></label>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn" type="submit">Generate ID Card</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="id-card hide">
+    <div class="id-top">
+      <span class="institute">SMIT Karachi</span>
+    </div>
+
+    <div class="id-content">
+      <div class="photo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3mZVMH7Y80cy377LVuqMH6l_jWIJY5FDOWQ&s"
+          alt="profile" class="img">
+      </div>
+
+      <h2 class="name">Abdullah Hamdani</h2>
+      <p class="role">Frontend Developer</p>
+
+      <div class="details">
+        <div>
+          <span>ID No</span>
+          <span class="id">SMIT-12345</span>
+        </div>
+        <div>
+          <span>Email</span>
+          <span class="email">abdullah.hamdani87@gmail.com</span>
+        </div>
       </div>
     </div>
+
+    <div class="id-bottom">
+      <span>Authorized ID</span>
+    </div>
   </div>
+  <button class="newCard hide" onclick="reset()">Generate Another</button>
 
-  <div class="id-bottom">
-    <span>Authorized ID</span>
-  </div>
-</div>
-
-
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

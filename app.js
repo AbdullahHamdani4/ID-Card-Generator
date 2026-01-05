@@ -1,6 +1,8 @@
-// console.log(1);
+
 let form = document.querySelector("form");
 let formContainer=document.querySelector(".form-container")
+let loader=document.querySelector(".loader")
+let btn=document.querySelector(".newCard") 
 let card=document.querySelector(".id-card")
 let nameField=document.querySelector(".name")
 let role=document.querySelector(".role")
@@ -11,16 +13,46 @@ let img=document.querySelector(".img")
 
 function generateCard(e) {
   e.preventDefault()
-  nameField.innerText=`${form.children[0].children[0].value} ${form.children[1].children[0].value} `;
-  id.innerText=form.children[2].children[0].value;
-  role.innerText=form.children[3].children[0].value;
-  email.innerText=form.children[4].children[0].value;
-  institute.innerText=form.children[5].children[0].value;
-  img.src=URL.createObjectURL(form.children[6].children[0].files[0])
- card.classList.toggle("hide")
-formContainer.classList.toggle("hide")
+  // Object
+let student={
+  firstName:form.children[0].children[0].value,
+  lastName:form.children[1].children[0].value,
+  id:form.children[2].children[0].value,
+  role:form.children[3].children[0].value,
+  email:form.children[4].children[0].value,
+  institute:form.children[5].children[0].value,
+  img:URL.createObjectURL(form.children[6].children[0].files[0]),
+}
+  //Pushing values in the card
+  nameField.innerText= `${student.firstName + student.lastName} `;
+  id.innerText=student.id;
+  role.innerText=student.role
+  email.innerText=student.email;
+  institute.innerText=student.institute;
+  img.src=student.img
+  //Loading the card
+  formContainer.classList.toggle("hide")
+  loader.classList.toggle("hide")
+  let inputs=form.getElementsByTagName("input")
+  for(let i=0;i<inputs.length;i++){
+    inputs[i].value=""
+  }
+  setTimeout(() => {
+    loader.classList.toggle("hide")
+  card.classList.toggle("hide")
+  btn.classList.toggle("hide")
+}, 2000);
  }
-
+ //Generating new Card
+function reset(params) {
+   card.classList.toggle("hide")
+  btn.classList.toggle("hide")
+      loader.classList.toggle("hide")
+setTimeout(() => {
+  loader.classList.toggle("hide")
+   formContainer.classList.toggle("hide")
+}, 2000);
+}
 
 
 
