@@ -1,6 +1,40 @@
 // console.log(1);
 let form = document.querySelector("form");
-console.log(form.children[0].children[0]);
+let nameField=document.querySelector(".name")
+let role=document.querySelector(".role")
+let id=document.querySelector(".id")
+let email=document.querySelector(".email")
+let institute=document.querySelector(".institute")
+
+function generateCard(e) {
+  nameField.innerText=`${form.children[0].children[0].value} ${form.children[1].children[0].value} `;
+  id.innerText=form.children[2].children[0].value;
+  role.innerText=form.children[3].children[0].value;
+  email.innerText=form.children[4].children[0].value;
+  institute.innerText=form.children[5].children[0].value;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let div=document.querySelector("div")
 //   function picSrc(input) {
