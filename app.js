@@ -5,13 +5,16 @@ let role=document.querySelector(".role")
 let id=document.querySelector(".id")
 let email=document.querySelector(".email")
 let institute=document.querySelector(".institute")
+let img=document.querySelector(".img")
 
 function generateCard(e) {
+  e.preventDefault()
   nameField.innerText=`${form.children[0].children[0].value} ${form.children[1].children[0].value} `;
   id.innerText=form.children[2].children[0].value;
   role.innerText=form.children[3].children[0].value;
   email.innerText=form.children[4].children[0].value;
   institute.innerText=form.children[5].children[0].value;
+  img.src=URL.createObjectURL(form.children[6].children[0].files[0])
  }
 
 
