@@ -1,44 +1,50 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background: #111827;
 
- }
- /* From Uiverse.io by Spacious74 */ 
-.container {
-  border: solid 1px #8d8d8d;
-  width: 300px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: #fff;
-  background: #e8e6e6;
-border-radius: 14px;
-box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #e5e7eb;
 }
+
+/* From Uiverse.io by Spacious74 */
+.container {
+  width: 340px;
+  padding: 28px;
+  background: #020617;
+  border-radius: 14px;
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  box-shadow:
+    0 0 0 1px rgba(56, 189, 248, 0.1),
+    0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
 
 .container .heading {
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-  font-weight: bolder;
   text-align: center;
-  color: #1f2937;
-font-weight: 600;
+  margin-bottom: 22px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #38bdf8;
 }
+
 
 .form {
   max-width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
 }
+
 
 .form .btn-container {
   width: 100%;
@@ -47,68 +53,84 @@ font-weight: 600;
   gap: 20px;
 }
 
-.form .btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-   letter-spacing: 3px;
-  border-radius: 10px;
-  border: solid 1px #1034aa;
-  border-bottom: solid 1px #90c2ff;
-  background: linear-gradient(135deg, #0034de, #006eff);
-  color: #fff;
-  font-weight: bolder;
-  transition: all 0.2s ease;
-  box-shadow: 0px 2px 3px #000d3848, inset 0px 4px 5px #0070f0,
-    inset 0px -4px 5px #002cbb;
-    width: 100%;
-    font-family: sans-serif;
+
+.form-container button {
+  width: 100%;
+  height: 44px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  border: none;
+  border-radius: 12px;
+  color: #020617;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow:
+    0 8px 20px rgba(14, 165, 233, 0.35);
 }
 
-.form .btn:active {
-  box-shadow: inset 0px 4px 5px #0070f0, inset 0px -4px 5px #002cbb;
-  transform: scale(0.995);
+.form-container button:hover {
+  transform: translateY(-1px);
 }
 
 .input-field {
   position: relative;
+
 }
 
 .input-field label {
   position: absolute;
-  color: #8d8d8d;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #94a3b8;
   pointer-events: none;
-  background-color: transparent;
-  left: 15px;
-  transform: translateY(0.6rem);
-  transition: all 0.3s ease;
+  transition: 0.2s ease;
+  background: #020617;
+  padding: 0 6px;
 }
 
+
 .input-field input {
-  padding: 10px 15px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: solid 1px #8d8d8d;
-  letter-spacing: 1px;
+
   width: 100%;
+  height: 42px;
+  margin-bottom: 10px;
+  padding: 0 14px;
+  background: #020617;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 10px;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.input-field input::placeholder {
+  color: #94a3b8;
+}
+
+.form-container input[type="file"] {
+  padding: 10px;
+  font-size: 13px;
+  border-radius: 10px;
+  background: #020617;
+  border: 1px dashed rgba(56, 189, 248, 0.4);
+  color: #94a3b8;
 }
 
 .input-field input:focus,
 .input-field input:valid {
   outline: none;
-  border: solid 1px #0034de;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4);
+  color: #e5e7eb;
 }
 
-.input-field input:focus ~ label,
-.input-field input:valid ~ label {
-  transform: translateY(-51%) translateX(-10px) scale(0.8);
-  background-color: #fff;
-  padding: 0px 5px;
-  color: #0034de;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border: none;
-  border-radius: 100px;
-  font-size: 1.2rem;
+.input-field input:focus~label,
+.input-field input:valid~label {
+  top: -6px;
+  font-size: 11px;
+  color: #38bdf8;
 }
 
 .form .passicon {
@@ -122,17 +144,17 @@ font-weight: 600;
 .form .close {
   display: none;
 }
- 
+
 
 /* ID Card.......... */
 .id-card {
-    border: 16px solid #ccc;
+  border: 16px solid #ccc;
   width: 360px;
   border-radius: 8px;
   background: #ffffff;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 25px 45px rgba(0,0,0,0.45);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.45);
 }
 
 .id-top {
@@ -205,7 +227,7 @@ font-weight: 600;
 }
 
 /* Loader */
-/* From Uiverse.io by andrew-manzyk */ 
+/* From Uiverse.io by andrew-manzyk */
 .loader {
   --main-size: 4em;
   --text-color: #ffffff;
@@ -306,88 +328,72 @@ font-weight: 600;
 }
 
 .loader .text:nth-child(1) span {
-  background: linear-gradient(
-    to right,
-    var(--text-color) 4%,
-    var(--shadow-color) 7%
-  );
+  background: linear-gradient(to right,
+      var(--text-color) 4%,
+      var(--shadow-color) 7%);
   background-size: 200% auto;
   background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(2) span {
-  background: linear-gradient(
-    to right,
-    var(--text-color) 9%,
-    var(--shadow-color) 13%
-  );
+  background: linear-gradient(to right,
+      var(--text-color) 9%,
+      var(--shadow-color) 13%);
   background-size: 200% auto;
   background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(3) span {
-  background: linear-gradient(
-    to right,
-    var(--text-color) 15%,
-    var(--shadow-color) 18%
-  );
+  background: linear-gradient(to right,
+      var(--text-color) 15%,
+      var(--shadow-color) 18%);
   background-size: 200% auto;
   background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(4) span {
-  background: linear-gradient(
-    to right,
-    var(--text-color) 20%,
-    var(--shadow-color) 23%
-  );
+  background: linear-gradient(to right,
+      var(--text-color) 20%,
+      var(--shadow-color) 23%);
   background-size: 200% auto;
   background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(6) span {
-  background: linear-gradient(
-    to right,
-    var(--shadow-color) 29%,
-    var(--text-color) 32%
-  );
+  background: linear-gradient(to right,
+      var(--shadow-color) 29%,
+      var(--text-color) 32%);
   background-size: 200% auto;
   background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(7) span {
-  background: linear-gradient(
-    to right,
-    var(--shadow-color) 34%,
-    var(--text-color) 37%
-  );
+  background: linear-gradient(to right,
+      var(--shadow-color) 34%,
+      var(--text-color) 37%);
   background-size: 200% auto;
   background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(8) span {
-  background: linear-gradient(
-    to right,
-    var(--shadow-color) 39%,
-    var(--text-color) 42%
-  );
+  background: linear-gradient(to right,
+      var(--shadow-color) 39%,
+      var(--text-color) 42%);
   background-size: 200% auto;
   background-clip: text;
   color: transparent;
 }
 
 .loader .text:nth-child(9) span {
-  background: linear-gradient(
-    to right,
-    var(--shadow-color) 45%,
-    var(--text-color) 48%
-  );
+  background: linear-gradient(to right,
+      var(--shadow-color) 45%,
+      var(--text-color) 48%);
   background-size: 200% auto;
   background-clip: text;
   color: transparent;
@@ -429,9 +435,11 @@ font-weight: 600;
   0% {
     transform: translateX(-90%);
   }
+
   50% {
     transform: translateX(90%);
   }
+
   100% {
     transform: translateX(-90%);
   }
@@ -441,6 +449,7 @@ font-weight: 600;
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -450,10 +459,12 @@ font-weight: 600;
   0% {
     background-position: -98% 0;
   }
+
   100% {
     background-position: 102% 0;
   }
 }
-.hide{
+
+.hide {
   display: none;
 }

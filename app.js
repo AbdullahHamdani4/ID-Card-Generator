@@ -10,7 +10,7 @@ let id=document.querySelector(".id")
 let email=document.querySelector(".email")
 let institute=document.querySelector(".institute")
 let img=document.querySelector(".img")
-
+ 
 function generateCard(e) {
   e.preventDefault()
   // Object
