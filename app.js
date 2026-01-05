@@ -2,8 +2,8 @@
 let form = document.querySelector("form");
 let formContainer=document.querySelector(".form-container")
 let loader=document.querySelector(".loader")
-let btn=document.querySelector(".newCard") 
-let card=document.querySelector(".id-card")
+let newBtn=document.querySelector(".newCard") 
+ let card=document.querySelector(".id-card")
 let nameField=document.querySelector(".name")
 let role=document.querySelector(".role")
 let id=document.querySelector(".id")
@@ -42,14 +42,14 @@ let student={
   setTimeout(() => {
     loader.classList.toggle("hide")
   card.classList.toggle("hide")
-  btn.classList.toggle("hide")
-}, 2000);
+  newBtn.classList.toggle("hide")
+ }, 2000);
  }
  //Generating new Card
 function reset(params) {
    card.classList.toggle("hide")
-  btn.classList.toggle("hide")
-      loader.classList.toggle("hide")
+  newBtn.classList.toggle("hide")
+       loader.classList.toggle("hide")
 setTimeout(() => {
   loader.classList.toggle("hide")
    formContainer.classList.toggle("hide")
@@ -58,8 +58,7 @@ setTimeout(() => {
 
 
 
-
-
+ 
 
 
 

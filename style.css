@@ -232,7 +232,7 @@ body {
   border-top: 1px solid rgba(56, 189, 248, 0.25);
 }
 
-.newCard {
+.newCard,.download {
   margin-top: 14px;
   padding: 10px 18px;
   border-radius: 10px;
@@ -246,10 +246,12 @@ body {
 .newCard:hover {
   background: rgba(56, 189, 248, 0.1);
 }
+.download:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
 
 /* Loader */
-/* From Uiverse.io by andrew-manzyk */
-.loader {
+ .loader {
   --main-size: 4em;
   --text-color: #ffffff;
   --shine-color: #ffffff40;
