@@ -1,6 +1,6 @@
 // console.log(1);
 let form = document.querySelector("form");
-console.log(form);
+console.log(form.children[0].children[0]);
 
 // let div=document.querySelector("div")
 //   function picSrc(input) {
