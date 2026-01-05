@@ -13,6 +13,8 @@ let img=document.querySelector(".img")
  
 function generateCard(e) {
   e.preventDefault()
+  let pic=form.children[6].children[0].files[0]
+  if(!pic.type.startsWith("image/")) return alert("Enter the correct format of pic")
   // Object
 let student={
   firstName:form.children[0].children[0].value,
