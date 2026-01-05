@@ -1,5 +1,7 @@
 // console.log(1);
 let form = document.querySelector("form");
+let formContainer=document.querySelector(".form-container")
+let card=document.querySelector(".id-card")
 let nameField=document.querySelector(".name")
 let role=document.querySelector(".role")
 let id=document.querySelector(".id")
@@ -15,6 +17,8 @@ function generateCard(e) {
   email.innerText=form.children[4].children[0].value;
   institute.innerText=form.children[5].children[0].value;
   img.src=URL.createObjectURL(form.children[6].children[0].files[0])
+ card.classList.toggle("hide")
+formContainer.classList.toggle("hide")
  }
 
 
